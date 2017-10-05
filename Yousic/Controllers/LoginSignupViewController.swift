@@ -12,10 +12,10 @@ class LoginSignupViewController: UIViewController {
 
    //MARK: Member Variables
    var ref: DatabaseReference!
+   var usersRef: DatabaseReference!
    var signupIsShowing: Bool = true
    
    //MARK: Outlets
-
    @IBOutlet weak var emailTextField: UITextField!
    @IBOutlet weak var usernameTextField: UITextField!
    @IBOutlet weak var passwordTextField: UITextField!
@@ -24,8 +24,11 @@ class LoginSignupViewController: UIViewController {
    
    
    //MARK: Actions
-   
-   // authenticate
+   /**********************************************************
+    * NAME: mainActionButtonTapped
+    *
+    * DESCRIPTION: authenticate a user into database.
+    ***********************************************************/
    @IBAction func mainActionButtonTapped(_ sender: Any) {
       guard let email = emailTextField.text, let username = usernameTextField.text, let password = passwordTextField.text else {
          // do some error handling here.
@@ -38,21 +41,28 @@ class LoginSignupViewController: UIViewController {
             print(error)
             return
          }
+         // make a dictionary of values to send to Firebase
+         let valuesToSendToFirebase = ["Username": username, "Email": email]
          
-//         self.ref.updateChildValues(["user": username])
+         // update the child values in the node tree in firebase.
+         self.usersRef.updateChildValues(valuesToSendToFirebase, withCompletionBlock: { (err, ref) in
+            if err != nil {
+               print(err)
+               return
+            }
+         })
          self.performSegue(withIdentifier: "toHomeScreen", sender: nil)
       }
    }
    
-   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-      let homeVC = segue.destination as! HomeScreenViewController
-//      homeVC.usernameNavItem.title = "Hello"
-      
-      
-   }
+
    
-   // switch between login and signup views
-   // always starting on signup
+   
+   /**********************************************************
+    * NAME: secondaryActionButtonTapped
+    *
+    * DESCRIPTION: switch between login and signup views.
+    ***********************************************************/
    @IBAction func secondaryActionButtonTapped(_ sender: Any) {
       if signupIsShowing {
          // show login
@@ -66,25 +76,31 @@ class LoginSignupViewController: UIViewController {
          mainActionButton.titleLabel?.text = "Sign Up"
          secondaryActionButton.titleLabel?.text = "Login"
          signupIsShowing = true
-         
       }
-
    }
    
    
    //MARK: Methods
-   
+   /**********************************************************
+    * NAME: viewDidLoad
+    *
+    * DESCRIPTION: called when the view is loaded
+    ***********************************************************/
    override func viewDidLoad() {
       super.viewDidLoad()
+      // view setup
       setupView()
+      // instantiate reference to our database.
       ref = Database.database().reference(fromURL: "https://spottystarter.firebaseio.com/")
-   }
-
-   override func didReceiveMemoryWarning() {
-      super.didReceiveMemoryWarning()
-      // Dispose of any resources that can be recreated.
+      usersRef = ref.child("users")
    }
    
+   
+   /**********************************************************
+    * NAME: setupView()
+    *
+    * DESCRIPTION: do additional view set up
+    ***********************************************************/
    func setupView() {
       mainActionButton.titleLabel?.text = "Sign Up"
       secondaryActionButton.titleLabel?.text = "Login"
