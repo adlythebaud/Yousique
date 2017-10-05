@@ -10,7 +10,17 @@ import UIKit
 
 class HomeScreenViewController: UIViewController {
 
-    override func viewDidLoad() {
+   //MARK: Variables
+   
+   //MARK: Outlets
+   
+   
+   
+   //MARK: Actions
+   
+   
+   
+   override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.

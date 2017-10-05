@@ -24,14 +24,8 @@ class LoginSignupViewController: UIViewController {
    
    
    //MARK: Actions
-//   @IBAction func submitButtonTapped(_ sender: Any) {
-////      self.ref.child(spottystarter).setValue(["message": "hi!"])
-////      self.ref.updateChildValues(["message": "hi!"])
-//
-//   }
    
-   // authenticate, whether logged in or not. If Else handle
-   // for whether we're signing up or logging back in.
+   // authenticate
    @IBAction func mainActionButtonTapped(_ sender: Any) {
       guard let email = emailTextField.text, let username = usernameTextField.text, let password = passwordTextField.text else {
          // do some error handling here.
@@ -39,17 +33,23 @@ class LoginSignupViewController: UIViewController {
          return
       }
       Auth.auth().createUser(withEmail: email, password: password) { (user: User?, error) in
+         // if this if statement is false, then we've successfully authenticated!
          if error != nil {
             print(error)
             return
          }
+         
          self.ref.updateChildValues(["user": username])
-         performSegue(withIdentifier: "toHomeScreen", sender: nil)
+         self.performSegue(withIdentifier: "toHomeScreen", sender: nil)
       }
    }
    
    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//      let homeVC
+      let homeVC = segue.destination as? HomeScreenViewController
+      homeVC?.navigationItem.title = "You in, son"
+      
+      
+      
    }
    
    // switch between login and signup views

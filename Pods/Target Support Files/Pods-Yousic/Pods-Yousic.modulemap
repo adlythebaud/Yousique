@@ -1,0 +1,6 @@
+framework module Pods_Yousic {
+  umbrella header "Pods-Yousic-umbrella.h"
+
+  export *
+  module * { export * }
+}

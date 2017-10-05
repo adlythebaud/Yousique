@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B87B3FB88F4AE652BFB865D5 /* Pods_YousicUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288478B0CCFFF6F245FA8094 /* Pods_YousicUITests.framework */; };
+		C0B669D61B541BA3B3AE6A31 /* Pods_YousicTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40E3CA2BA5D6B2A38F17BD23 /* Pods_YousicTests.framework */; };
+		DDCED78E6E15DDE7E5A41F16 /* Pods_Yousic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74EE884457F926DED277F1E7 /* Pods_Yousic.framework */; };
+		F8A040671F859F4D002DF8C5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8A040661F859F4D002DF8C5 /* GoogleService-Info.plist */; };
+		F8A040691F85B2DB002DF8C5 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A040681F85B2DB002DF8C5 /* HomeScreenViewController.swift */; };
 		F8C466821F85655200CF6866 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C466811F85655200CF6866 /* AppDelegate.swift */; };
-		F8C466841F85655200CF6866 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C466831F85655200CF6866 /* ViewController.swift */; };
+		F8C466841F85655200CF6866 /* LoginSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C466831F85655200CF6866 /* LoginSignupViewController.swift */; };
 		F8C466871F85655200CF6866 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8C466851F85655200CF6866 /* Main.storyboard */; };
 		F8C4668A1F85655200CF6866 /* Yousic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F8C466881F85655200CF6866 /* Yousic.xcdatamodeld */; };
 		F8C4668C1F85655200CF6866 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8C4668B1F85655200CF6866 /* Assets.xcassets */; };
@@ -35,9 +40,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		288478B0CCFFF6F245FA8094 /* Pods_YousicUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YousicUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A816A46A210C843716FAE58 /* Pods-YousicTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YousicTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YousicTests/Pods-YousicTests.debug.xcconfig"; sourceTree = "<group>"; };
+		40E3CA2BA5D6B2A38F17BD23 /* Pods_YousicTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YousicTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A03B426FDA58BFF5BFF929F /* Pods-YousicUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YousicUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YousicUITests/Pods-YousicUITests.release.xcconfig"; sourceTree = "<group>"; };
+		542FBCD2775830C6C7E9CC47 /* Pods-YousicUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YousicUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YousicUITests/Pods-YousicUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		74EE884457F926DED277F1E7 /* Pods_Yousic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yousic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B048508F74A33BDEED12BCE6 /* Pods-Yousic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yousic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Yousic/Pods-Yousic.debug.xcconfig"; sourceTree = "<group>"; };
+		DEE5295A5EFF2C0DCADECC04 /* Pods-YousicTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YousicTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YousicTests/Pods-YousicTests.release.xcconfig"; sourceTree = "<group>"; };
+		EEE3573BD0941EC1D889F205 /* Pods-Yousic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yousic.release.xcconfig"; path = "Pods/Target Support Files/Pods-Yousic/Pods-Yousic.release.xcconfig"; sourceTree = "<group>"; };
+		F8A040661F859F4D002DF8C5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F8A040681F85B2DB002DF8C5 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		F8C4667E1F85655200CF6866 /* Yousic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yousic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8C466811F85655200CF6866 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F8C466831F85655200CF6866 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F8C466831F85655200CF6866 /* LoginSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupViewController.swift; sourceTree = "<group>"; };
 		F8C466861F85655200CF6866 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F8C466891F85655200CF6866 /* Yousic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Yousic.xcdatamodel; sourceTree = "<group>"; };
 		F8C4668B1F85655200CF6866 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDCED78E6E15DDE7E5A41F16 /* Pods_Yousic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0B669D61B541BA3B3AE6A31 /* Pods_YousicTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +88,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B87B3FB88F4AE652BFB865D5 /* Pods_YousicUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		77A24484A0AB526B6FDCECC3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74EE884457F926DED277F1E7 /* Pods_Yousic.framework */,
+				40E3CA2BA5D6B2A38F17BD23 /* Pods_YousicTests.framework */,
+				288478B0CCFFF6F245FA8094 /* Pods_YousicUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C2F78BDA8C351BC5C51C7F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B048508F74A33BDEED12BCE6 /* Pods-Yousic.debug.xcconfig */,
+				EEE3573BD0941EC1D889F205 /* Pods-Yousic.release.xcconfig */,
+				3A816A46A210C843716FAE58 /* Pods-YousicTests.debug.xcconfig */,
+				DEE5295A5EFF2C0DCADECC04 /* Pods-YousicTests.release.xcconfig */,
+				542FBCD2775830C6C7E9CC47 /* Pods-YousicUITests.debug.xcconfig */,
+				4A03B426FDA58BFF5BFF929F /* Pods-YousicUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F8A0406A1F85B2E3002DF8C5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F8C466831F85655200CF6866 /* LoginSignupViewController.swift */,
+				F8A040681F85B2DB002DF8C5 /* HomeScreenViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		F8C466751F85655100CF6866 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +134,8 @@
 				F8C466981F85655200CF6866 /* YousicTests */,
 				F8C466A31F85655200CF6866 /* YousicUITests */,
 				F8C4667F1F85655200CF6866 /* Products */,
+				9C2F78BDA8C351BC5C51C7F5 /* Pods */,
+				77A24484A0AB526B6FDCECC3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,8 +152,9 @@
 		F8C466801F85655200CF6866 /* Yousic */ = {
 			isa = PBXGroup;
 			children = (
+				F8A0406A1F85B2E3002DF8C5 /* Controllers */,
+				F8A040661F859F4D002DF8C5 /* GoogleService-Info.plist */,
 				F8C466811F85655200CF6866 /* AppDelegate.swift */,
-				F8C466831F85655200CF6866 /* ViewController.swift */,
 				F8C466851F85655200CF6866 /* Main.storyboard */,
 				F8C4668B1F85655200CF6866 /* Assets.xcassets */,
 				F8C4668D1F85655200CF6866 /* LaunchScreen.storyboard */,
@@ -135,9 +189,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8C466A91F85655200CF6866 /* Build configuration list for PBXNativeTarget "Yousic" */;
 			buildPhases = (
+				B246B835570CB6AE7FDBD45C /* [CP] Check Pods Manifest.lock */,
 				F8C4667A1F85655100CF6866 /* Sources */,
 				F8C4667B1F85655100CF6866 /* Frameworks */,
 				F8C4667C1F85655100CF6866 /* Resources */,
+				E52BF9921428E8B50FFEA9E9 /* [CP] Embed Pods Frameworks */,
+				D1A08AB7088183ECD34DC7E2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +209,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8C466AC1F85655200CF6866 /* Build configuration list for PBXNativeTarget "YousicTests" */;
 			buildPhases = (
+				7B87222FA6940AE95FBBF7BA /* [CP] Check Pods Manifest.lock */,
 				F8C466911F85655200CF6866 /* Sources */,
 				F8C466921F85655200CF6866 /* Frameworks */,
 				F8C466931F85655200CF6866 /* Resources */,
+				9E38330D10E08ACD0E50FAE9 /* [CP] Embed Pods Frameworks */,
+				C0D3E8AD5FBFCFE47C31FC82 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +230,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8C466AF1F85655200CF6866 /* Build configuration list for PBXNativeTarget "YousicUITests" */;
 			buildPhases = (
+				4207406DCD624ED04464DC18 /* [CP] Check Pods Manifest.lock */,
 				F8C4669C1F85655200CF6866 /* Sources */,
 				F8C4669D1F85655200CF6866 /* Frameworks */,
 				F8C4669E1F85655200CF6866 /* Resources */,
+				25DAD8EEF3D705D59BB7C9D6 /* [CP] Embed Pods Frameworks */,
+				A6DA1E8490C54606B29E4EAF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8C4668F1F85655200CF6866 /* LaunchScreen.storyboard in Resources */,
+				F8A040671F859F4D002DF8C5 /* GoogleService-Info.plist in Resources */,
 				F8C4668C1F85655200CF6866 /* Assets.xcassets in Resources */,
 				F8C466871F85655200CF6866 /* Main.storyboard in Resources */,
 			);
@@ -257,13 +321,172 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		25DAD8EEF3D705D59BB7C9D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YousicUITests/Pods-YousicUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4207406DCD624ED04464DC18 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YousicUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B87222FA6940AE95FBBF7BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YousicTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E38330D10E08ACD0E50FAE9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YousicTests/Pods-YousicTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6DA1E8490C54606B29E4EAF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YousicUITests/Pods-YousicUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B246B835570CB6AE7FDBD45C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Yousic-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0D3E8AD5FBFCFE47C31FC82 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YousicTests/Pods-YousicTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1A08AB7088183ECD34DC7E2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Yousic/Pods-Yousic-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E52BF9921428E8B50FFEA9E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Yousic/Pods-Yousic-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Yousic/Pods-Yousic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F8C4667A1F85655100CF6866 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F8C4668A1F85655200CF6866 /* Yousic.xcdatamodeld in Sources */,
-				F8C466841F85655200CF6866 /* ViewController.swift in Sources */,
+				F8A040691F85B2DB002DF8C5 /* HomeScreenViewController.swift in Sources */,
+				F8C466841F85655200CF6866 /* LoginSignupViewController.swift in Sources */,
 				F8C466821F85655200CF6866 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +651,7 @@
 		};
 		F8C466AA1F85655200CF6866 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B048508F74A33BDEED12BCE6 /* Pods-Yousic.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -443,6 +667,7 @@
 		};
 		F8C466AB1F85655200CF6866 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEE3573BD0941EC1D889F205 /* Pods-Yousic.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -458,6 +683,7 @@
 		};
 		F8C466AD1F85655200CF6866 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A816A46A210C843716FAE58 /* Pods-YousicTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -475,6 +701,7 @@
 		};
 		F8C466AE1F85655200CF6866 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEE5295A5EFF2C0DCADECC04 /* Pods-YousicTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -492,6 +719,7 @@
 		};
 		F8C466B01F85655200CF6866 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 542FBCD2775830C6C7E9CC47 /* Pods-YousicUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -508,6 +736,7 @@
 		};
 		F8C466B11F85655200CF6866 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A03B426FDA58BFF5BFF929F /* Pods-YousicUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
