@@ -13,6 +13,10 @@ class HomeScreenViewController: UIViewController {
    //MARK: Variables
    
    //MARK: Outlets
+   @IBOutlet weak var usernameNavItem: UINavigationItem!
+   @IBOutlet weak var inputTextField: UITextField!
+   @IBAction func sendButtonTapped(_ sender: Any) {
+   }
    
    
    

@@ -39,15 +39,14 @@ class LoginSignupViewController: UIViewController {
             return
          }
          
-         self.ref.updateChildValues(["user": username])
+//         self.ref.updateChildValues(["user": username])
          self.performSegue(withIdentifier: "toHomeScreen", sender: nil)
       }
    }
    
    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-      let homeVC = segue.destination as? HomeScreenViewController
-      homeVC?.navigationItem.title = "You in, son"
-      
+      let homeVC = segue.destination as! HomeScreenViewController
+//      homeVC.usernameNavItem.title = "Hello"
       
       
    }

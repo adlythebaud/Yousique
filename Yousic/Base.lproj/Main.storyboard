@@ -36,7 +36,7 @@
                                         <rect key="frame" x="0.0" y="80" width="250" height="40"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
@@ -106,10 +106,42 @@
                                     <navigationItem title="Title" id="nN7-wQ-x9F"/>
                                 </items>
                             </navigationBar>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gKQ-rp-LOj">
+                                <rect key="frame" x="62.5" y="317.5" width="250" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="tcl-0O-vBG"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="send"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fVF-P1-ma0">
+                                <rect key="frame" x="62" y="358.5" width="250" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="IME-QE-zuK"/>
+                                </constraints>
+                                <state key="normal" title="SEND">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendButtonTapped:" destination="xKl-6g-M6E" eventType="touchUpInside" id="Wey-Tw-UaB"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="gKQ-rp-LOj" firstAttribute="centerY" secondItem="SXa-2Q-bgm" secondAttribute="centerY" id="BkV-tO-aKs"/>
+                            <constraint firstItem="fVF-P1-ma0" firstAttribute="top" secondItem="gKQ-rp-LOj" secondAttribute="bottom" constant="10" id="GtU-Nq-aBQ"/>
+                            <constraint firstItem="fVF-P1-ma0" firstAttribute="centerX" secondItem="SXa-2Q-bgm" secondAttribute="centerX" id="bPa-lq-y3c"/>
+                            <constraint firstItem="gKQ-rp-LOj" firstAttribute="centerX" secondItem="SXa-2Q-bgm" secondAttribute="centerX" id="tUm-NC-Vz8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Xh0-jL-EDN"/>
                     </view>
+                    <connections>
+                        <outlet property="inputTextField" destination="gKQ-rp-LOj" id="jRL-Ho-Nz3"/>
+                        <outlet property="usernameNavItem" destination="nN7-wQ-x9F" id="yaF-de-Q9i"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tVo-wz-gLm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
