@@ -11,6 +11,7 @@
 		C0B669D61B541BA3B3AE6A31 /* Pods_YousicTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40E3CA2BA5D6B2A38F17BD23 /* Pods_YousicTests.framework */; };
 		DDCED78E6E15DDE7E5A41F16 /* Pods_Yousic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74EE884457F926DED277F1E7 /* Pods_Yousic.framework */; };
 		F828302F1F86C37E00AC7874 /* DatabaseReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = F828302E1F86C37E00AC7874 /* DatabaseReference.swift */; };
+		F82830321F86D92700AC7874 /* UserReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82830311F86D92700AC7874 /* UserReference.swift */; };
 		F8A040671F859F4D002DF8C5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8A040661F859F4D002DF8C5 /* GoogleService-Info.plist */; };
 		F8A040691F85B2DB002DF8C5 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A040681F85B2DB002DF8C5 /* HomeScreenViewController.swift */; };
 		F8C466821F85655200CF6866 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C466811F85655200CF6866 /* AppDelegate.swift */; };
@@ -51,6 +52,7 @@
 		DEE5295A5EFF2C0DCADECC04 /* Pods-YousicTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YousicTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YousicTests/Pods-YousicTests.release.xcconfig"; sourceTree = "<group>"; };
 		EEE3573BD0941EC1D889F205 /* Pods-Yousic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yousic.release.xcconfig"; path = "Pods/Target Support Files/Pods-Yousic/Pods-Yousic.release.xcconfig"; sourceTree = "<group>"; };
 		F828302E1F86C37E00AC7874 /* DatabaseReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseReference.swift; sourceTree = "<group>"; };
+		F82830311F86D92700AC7874 /* UserReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReference.swift; sourceTree = "<group>"; };
 		F8A040661F859F4D002DF8C5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F8A040681F85B2DB002DF8C5 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		F8C4667E1F85655200CF6866 /* Yousic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yousic.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				F828302E1F86C37E00AC7874 /* DatabaseReference.swift */,
+				F82830311F86D92700AC7874 /* UserReference.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -507,6 +510,7 @@
 				F8A040691F85B2DB002DF8C5 /* HomeScreenViewController.swift in Sources */,
 				F828302F1F86C37E00AC7874 /* DatabaseReference.swift in Sources */,
 				F8C466841F85655200CF6866 /* LoginSignupViewController.swift in Sources */,
+				F82830321F86D92700AC7874 /* UserReference.swift in Sources */,
 				F8C466821F85655200CF6866 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

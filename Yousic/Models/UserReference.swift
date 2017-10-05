@@ -1,5 +1,5 @@
 //
-//  DatabaseReference.swift
+//  UserReference.swift
 //  Yousic
 //
 //  Created by Adly Thebaud on 10/5/17.
@@ -8,6 +8,7 @@
 
 import Foundation
 import Firebase
-class DBReference {
-   var ref: DatabaseReference!
+class UserReference {
+   var usersRef: DatabaseReference!
+   
 }
