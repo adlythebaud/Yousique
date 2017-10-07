@@ -145,6 +145,43 @@ class LoginSignupViewController: UIViewController {
          self.performSegue(withIdentifier: "toHomeScreen", sender: nil)
       }
    }
+   
+   /**********************************************************
+    * NAME: clearTextFields
+    *
+    * DESCRIPTION: clear text fields when user logs in
+    ***********************************************************/
+   func clearTextFields() {
+      emailTextField.text = ""
+      usernameTextField.text = ""
+      passwordTextField.text = ""
+   }
+   
+   /**********************************************************
+    * NAME: showLoginScreen
+    *
+    * DESCRIPTION: show the login screen when the login button
+    * is tapped.
+    ***********************************************************/
+   func showLoginScreen() {
+      emailTextField.isHidden = true
+      mainActionButton.titleLabel?.text = "Login"
+      secondaryActionButton.titleLabel?.text = "Sign Up"
+      signupIsShowing = false
+   }
+   
+   /**********************************************************
+    * NAME: showSignupScreen
+    *
+    * DESCRIPTION: show sign up screen when sign up button is
+    * tapped.
+    ***********************************************************/
+   func showSignupScreen() {
+      emailTextField.isHidden = false
+      mainActionButton.titleLabel?.text = "Sign Up"
+      secondaryActionButton.titleLabel?.text = "Login"
+      signupIsShowing = true
+   }
 
 
 }
